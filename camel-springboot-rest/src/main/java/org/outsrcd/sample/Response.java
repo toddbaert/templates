@@ -1,4 +1,4 @@
-package org.tate.yourspace;
+package org.outsrcd.sample;
 
 public class Response {
 

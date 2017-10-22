@@ -8,6 +8,22 @@ import org.apache.camel.impl.SimpleRegistry;
 public class Launcher {
 
   public static void main(String... args) throws Exception {
+    
+    if (args.length != 3 ||
+        args[0] == null ||
+        args[1] == null ||
+        args[2] == null ||
+        args[0].equals("") ||
+        args[1].equals("") ||
+        args[2].equals("")) {
+      System.out.println("pleae add args publish url, subscribe url and topic in the form some/topic/address");
+    }
+    
+    System.out.println("publishing to " + args[0] + ", subcribing to " + args[1] + ", topic: " + args[2]);
+    
+    System.setProperty("publish.url", args[0]);
+    System.setProperty("subscribe.url", args[1]);
+    System.setProperty("topic", args[2]);
 
     SimpleRegistry reg = new SimpleRegistry();
 

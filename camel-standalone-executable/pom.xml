@@ -46,6 +46,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-paho</artifactId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-test</artifactId>
 			<version>${camel.version}</version>
 			<scope>test</scope>
@@ -61,7 +66,7 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-		</dependency>		
+		</dependency>
 	</dependencies>
 	<repositories>
 		<repository>
